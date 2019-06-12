@@ -11,7 +11,7 @@ public class FogetPasswordTest extends BaseTest {
     @Test
     public void fpSuccess() throws InterruptedException {
         ForgetPasswordPage fp = new ForgetPasswordPage(getDriver());
-        fp.forgetPassword("jia","15227170389","982339661@qq.com");
+        fp.forgetPassword("jia","74658932","43785485");
         Assert.assertEquals(getDriver().currentActivity(),".LoginActivity");
         
     }
@@ -19,7 +19,7 @@ public class FogetPasswordTest extends BaseTest {
     @Test
     public void fpFail() throws InterruptedException {
         ForgetPasswordPage fp = new ForgetPasswordPage(getDriver());
-        fp.forgetPassword("","15227170389","982339661@qq.com");
+        fp.forgetPassword("jia","74658932","43785485");
         Assert.assertEquals(getDriver().currentActivity(),".ForgetActivity");
         //点击系统返回键
         getDriver().navigate().back();
