@@ -14,12 +14,12 @@ public class UiautomatorPrictice {
 
     @Test
     public void testSolar(){
-    //µ«¬º
+    //ÁôªÂΩï
         device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-        //µ„ª˜Homeº¸
+        //ÁÇπÂáªHomeÈîÆ
         device.pressHome();
 
-        //µ„ª˜SolarApp
+        //ÁÇπÂáªSolarApp
         UiObject logo = device.findObject(new UiSelector().text("Solar"));
         try {
             logo.click();
@@ -27,10 +27,10 @@ public class UiautomatorPrictice {
             e.printStackTrace();
         }
 
-        // ‰»Î”√ªß√˚√‹¬Î
+        //ËæìÂÖ•Áî®Êà∑ÂêçÂØÜÁ†Å
         UiObject username = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/login_name"));
         UiObject password = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/password"));
-        UiObject login = device.findObject(new UiSelector().text(" µ«  ¬º "));
+        UiObject login = device.findObject(new UiSelector().text(" Áôª  ÂΩï "));
         try {
             username.setText("jia");
             password.setText("4589567659");
@@ -39,97 +39,6 @@ public class UiautomatorPrictice {
             e.printStackTrace();
         }
 
-    //ø™∆Ù∑¨«—ƒ÷÷”
-        //µ„ª˜ONE
-        UiObject one = device.findObject(new UiSelector().text("ONE"));
-        try {
-            one.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-        //ø™ ºº∆ ±
-        UiObject start = device.findObject(new UiSelector().text("25"));
-        try {
-            start.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-        //∑µªÿ
-        device.pressBack();
-    //∏ˆ»À÷––ƒ
-        //µ„ª˜∏ˆ»À÷––ƒ
-        UiObject more = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/btn_more"));
-        try {
-            more.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-    //≤Èø¥ª˝∑÷
-        UiObject score = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/ll_score_details"));
-        try {
-            score.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-        device.pressBack();
-    //«–ªª’À∫≈
-        UiObject change = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/ll_change_user"));
-        try {
-            change.click();
-            username.setText("lisi");
-            password.setText("123456");
-            login.click();
-            more.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-
-    //◊¢≤·–¬”√ªß
-        UiObject register = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/ll_zhu_ce"));
-        try {
-            register.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-        UiObject name = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/username"));
-        UiObject phone = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/phone"));
-        UiObject email = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/email"));
-        UiObject pwd = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/password"));
-        UiObject pwd2 = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/qpassword"));
-
-        try {
-            name.setText("zhaosi");
-            phone.setText("15222222223");
-            email.setText("123@456.com");
-            pwd.setText("123456");
-            pwd2.setText("123456");
-            device.findObject(new UiSelector().text("◊¢≤·")).click();
-            username.setText("zhaosi");
-            password.setText("123456");
-            login.click();
-            more.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-
-    //…Ë÷√
-        UiObject set = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/ll_set_up"));
-        try {
-            set.click();
-            device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/switch1"));
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-        device.pressBack();
-    //ÕÀ≥ˆ
-        UiObject logout = device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/ll_check_out"));
-        try {
-            logout.click();
-        } catch (UiObjectNotFoundException e) {
-            e.printStackTrace();
-        }
-
-    }
 
     @Test
     public void testLinear(){
@@ -140,8 +49,8 @@ public class UiautomatorPrictice {
         } catch (UiObjectNotFoundException e) {
             e.printStackTrace();
         }
-        //µ«¬º
-        UiObject login1 = device.findObject(new UiSelector().text("µ«¬º"));
+        //ÁôªÂΩï
+        UiObject login1 = device.findObject(new UiSelector().text("ÁôªÂΩï"));
         UiObject username = device.findObject(new UiSelector().resourceId("me.tictok.linear:id/etUser"));
         UiObject password = device.findObject(new UiSelector().resourceId("me.tictok.linear:id/etPassword"));
         UiObject login2 = device.findObject(new UiSelector().resourceId("me.tictok.linear:id/btnLogin"));
@@ -154,7 +63,7 @@ public class UiautomatorPrictice {
             e.printStackTrace();
         }
         @Test
-        //ø™∆Ù“ª∏ˆ∑¨«—ƒ÷÷”≤¢πÿ±’
+        //ÂºÄÂêØ‰∏Ä‰∏™Áï™ËåÑÈóπÈíüÂπ∂ÂÖ≥Èó≠
         public  void test2() throws UiObjectNotFoundException,RemoteException {
             device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
             UiObject homeBtn =device.findObject(new UiSelector().resourceId("com.example.lx.solarfragment:id/image1"));
@@ -167,10 +76,10 @@ public class UiautomatorPrictice {
             giveupBtn.click();
         }
    
-    //ÕÀ≥ˆµ«¬º
-        UiObject mine = device.findObject(new UiSelector().text("Œ“µƒ"));
-        UiObject set = device.findObject(new UiSelector().text("…Ë÷√"));
-        UiObject exit = device.findObject(new UiSelector().text("ÕÀ≥ˆµ«¬º"));
+    //ÈÄÄÂá∫ÁôªÂΩï
+        UiObject mine = device.findObject(new UiSelector().text("ÊàëÁöÑ"));
+        UiObject set = device.findObject(new UiSelector().text("ËÆæÁΩÆ"));
+        UiObject exit = device.findObject(new UiSelector().text("ÈÄÄÂá∫ÁôªÂΩï"));
         try {
             mine.click();
             set.click();
